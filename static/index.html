@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency News and Market</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cryptocurrency News and Market Data</h1>
+
+    <button onclick="loadCryptoNews()">Get Crypto News</button>
+    <button onclick="loadCryptoData()">Get Crypto Market Data</button>
+
+    <div id="news-container" class="content"></div>
+    <div id="data-container" class="content"></div>
+
+    <script>
+        async function loadCryptoNews() {
+            const response = await fetch('http://localhost:8080/crypto-news');
+            const data = await response.text();
+            document.getElementById('news-container').innerHTML = data;
+        }
+
+        async function loadCryptoData() {
+            const response = await fetch('http://localhost:8080/crypto-data');
+            const data = await response.text();
+            document.getElementById('data-container').innerHTML = data;
+        }
+    </script>
+
+</body>
+
+</html>
