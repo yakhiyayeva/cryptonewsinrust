@@ -48,42 +48,6 @@ To run this project locally, ensure that you have Rust installed. You can follow
 
 
 
-- **Get Latest Crypto News**
-    ```
-    GET http://127.0.0.1:8080/crypto-news
-    ```
-
-    Response:
-    ```html
-    <html>
-      <body>
-        <h3>Title of Article</h3>
-        <p><strong>Source:</strong> Some Source<br>
-        <strong>Published At:</strong> 2022-01-01<br>
-        <strong>Description:</strong> This is an article about crypto news<br>
-        <a href="article-url" target="_blank">Read more</a></p>
-      </body>
-    </html>
-    ```
-
-- **Get Crypto Market Data**
-    ```
-    GET http://127.0.0.1:8080/crypto-data
-    ```
-
-    Response:
-    ```html
-    <html>
-      <body>
-        <h3>Bitcoin (BTC)</h3>
-        <p><strong>Price:</strong> $45,000<br>
-        <strong>Market Cap:</strong> $850 Billion<br>
-        <strong>Volume:</strong> $35 Billion</p>
-      </body>
-    </html>
-    ```
-
-
 ## Contributions
 
 Feel free to fork this project and contribute! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
