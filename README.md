@@ -83,18 +83,6 @@ To run this project locally, ensure that you have Rust installed. You can follow
     </html>
     ```
 
-- **Get Top 10 Cryptos**
-    ```
-    GET http://127.0.0.1:8080/top-cryptos/10
-    ```
-
-    Response:
-    ```json
-    [
-      {"name": "Bitcoin", "symbol": "BTC", "market_cap": 850000000000},
-      {"name": "Ethereum", "symbol": "ETH", "market_cap": 450000000000}
-    ]
-    ```
 
 ## Contributions
 
