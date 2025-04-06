@@ -1,6 +1,5 @@
-# Crypto Pulse
-
-Crypto Pulse is a web application that allows users to track real-time cryptocurrency market data and read the latest news related to the crypto world. Users can search for popular coins like Bitcoin, Ethereum, Cardano, and more by entering their names or symbols.
+# Crypto News
+Crypto News is a simple and sleek web app that lets users track real-time cryptocurrency market data and stay updated with the latest crypto-related news. Just type a coin name (e.g., "bitcoin") and hit Search to view its market value and relevant news articles.
 # Features
  Search for cryptocurrency market data
 
@@ -12,6 +11,16 @@ Crypto Pulse is a web application that allows users to track real-time cryptocur
 
  Suggests supported cryptocurrencies
 
+# How It Works
+User enters a cryptocurrency name (e.g., bitcoin)
+
+App fetches:
+
+Market data like price and market cap
+
+Latest news articles
+
+Displays everything beautifully on the same page
 ## Usage
 
 To run this project locally, ensure that you have Rust installed. You can follow the instructions to install Rust [here](https://www.rust-lang.org/learn/get-started).
@@ -32,16 +41,11 @@ To run this project locally, ensure that you have Rust installed. You can follow
 3. Run the server:
     ```bash
     cargo run
-    ```
 
-4. Access the API locally at:
-    - [http://127.0.0.1:8080/crypto-news](http://127.0.0.1:8080/crypto-news) – Fetches the latest cryptocurrency news.
-    - [http://127.0.0.1:8080/crypto-data](http://127.0.0.1:8080/crypto-data) – Fetches real-time cryptocurrency market data (price, market cap, and volume).
-    - [http://127.0.0.1:8080/health](http://127.0.0.1:8080/health) – Check the server health status.
-    - [http://127.0.0.1:8080/top-cryptos/{count}](http://127.0.0.1:8080/top-cryptos/10) – Fetches the top N cryptocurrencies by market cap.
 
 ## Demo Screenshot
-![image](https://github.com/user-attachments/assets/422cc2c1-844d-4a52-b78f-6e566a30eb4b)
+![image](https://github.com/user-attachments/assets/439511c5-cf8f-4db4-bc0c-5adeecdd6d0d)
+
 
 
 - **Get Latest Crypto News**
