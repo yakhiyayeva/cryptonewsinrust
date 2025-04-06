@@ -1,6 +1,16 @@
-# Crypto News & Data API
+# Crypto Pulse
 
-A simple web API built with Actix Web and Reqwest to provide cryptocurrency news and data. This API fetches real-time data from external sources like GNews and CoinGecko to display crypto-related news and market data.
+Crypto Pulse is a web application that allows users to track real-time cryptocurrency market data and read the latest news related to the crypto world. Users can search for popular coins like Bitcoin, Ethereum, Cardano, and more by entering their names or symbols.
+# Features
+ Search for cryptocurrency market data
+
+ Get the latest news related to cryptocurrencies
+
+ Graceful error handling for missing data or API issues
+
+ Clean and modern responsive UI
+
+ Suggests supported cryptocurrencies
 
 ## Usage
 
@@ -10,8 +20,8 @@ To run this project locally, ensure that you have Rust installed. You can follow
 
 1. Clone the repository:
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-folder>
+    git clone (https://github.com/yakhiyayeva/cryptonewsinrust)
+    cd (https://github.com/yakhiyayeva/cryptonewsinrust)
     ```
 
 2. Install dependencies:
@@ -33,9 +43,6 @@ To run this project locally, ensure that you have Rust installed. You can follow
 ## Demo Screenshot
 ![image](https://github.com/user-attachments/assets/422cc2c1-844d-4a52-b78f-6e566a30eb4b)
 
-
-
-## Examples
 
 - **Get Latest Crypto News**
     ```
