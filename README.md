@@ -31,7 +31,8 @@ To run this project locally, ensure that you have Rust installed. You can follow
     - [http://127.0.0.1:8080/top-cryptos/{count}](http://127.0.0.1:8080/top-cryptos/10) – Fetches the top N cryptocurrencies by market cap.
 
 ## Demo Screenshot
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/422cc2c1-844d-4a52-b78f-6e566a30eb4b)
+
 
 
 ## Examples
