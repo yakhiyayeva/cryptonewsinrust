@@ -89,6 +89,4 @@ To run this project locally, ensure that you have Rust installed. You can follow
 
 Feel free to fork this project and contribute! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
