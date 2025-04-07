@@ -1,5 +1,11 @@
 # Crypto News
 Crypto News is a simple and sleek web app that lets users track real-time cryptocurrency market data and stay updated with the latest crypto-related news. Just type a coin name (e.g., "bitcoin") and hit Search to view its market value and relevant news articles.
+# APIs Used
+CoinGecko API
+Used to fetch real-time cryptocurrency data such as current price, market capitalization, and token details.
+
+GNews API
+Used to fetch recent news articles related to selected cryptocurrencies. Also includes basic date formatting and sentiment tagging.
 # Features
  Search for cryptocurrency market data
 
