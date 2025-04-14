@@ -9,7 +9,7 @@ use lru_cache::LruCache;
 use std::sync::Mutex;
 use chrono::{DateTime, Utc};
 
-// Cache for API responses (LRU with 100 items capacity)
+
 type ApiCache = Mutex<LruCache<String, String>>;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -19,7 +19,7 @@ struct NewsArticle {
     url: String,
     published_at: String,
     source_name: String,
-    sentiment: Option<f32>,  // For bonus feature
+    sentiment: Option<f32>,  
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -61,7 +61,7 @@ struct CoinGeckoCoin {
     image: Option<String>,
 }
 
-// Initialize cache
+
 lazy_static::lazy_static! {
     static ref CACHE: ApiCache = Mutex::new(LruCache::new(100));
 }
@@ -78,7 +78,7 @@ async fn get_news(
 ) -> impl Responder {
     let cache_key = format!("news_{}", crypto);
     
-    // Check cache first
+    
     if let Some(cached) = CACHE.lock().unwrap().get_mut(&cache_key) {
         return HttpResponse::Ok()
             .content_type("application/json")
@@ -97,7 +97,7 @@ async fn get_news(
                 let articles: Vec<NewsArticle> = news.articles.into_iter().map(|a| {
                     let sentiment = analyze_sentiment(&a.title); // Bonus feature
                     
-                    // Parse and format date
+                   
                     let parsed_date = DateTime::parse_from_rfc3339(&a.publishedAt)
                         .unwrap_or_else(|_| Utc::now().into());
                     let formatted_date = parsed_date.format("%Y-%m-%d %H:%M:%S").to_string();
@@ -114,7 +114,7 @@ async fn get_news(
                 
                 let json = serde_json::to_string(&articles).unwrap();
                 
-                // Cache the response
+              
                 CACHE.lock().unwrap().insert(cache_key, json.clone());
                 
                 HttpResponse::Ok()
@@ -157,7 +157,7 @@ async fn get_crypto(
         .await
     {
         Ok(response) => {
-            // Сохраняем статус перед использованием response
+           
             let status = response.status();
             
             if status.is_success() {
@@ -208,9 +208,9 @@ async fn get_crypto(
         }
     }
 }
-// Bonus: Simple sentiment analysis
+
 fn analyze_sentiment(text: &str) -> Option<f32> {
-    // This is a very basic implementation
+ 
     let positive_words = ["up", "rise", "bull", "growth", "positive"];
     let negative_words = ["down", "fall", "bear", "drop", "negative"];
     
